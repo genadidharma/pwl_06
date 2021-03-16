@@ -33,3 +33,7 @@ Route::get('/customer', [CustomerController::class, 'index'])->name('customer');
 Route::get('/employee', [EmployeeController::class, 'index'])->name('employee');
 Route::get('/supplier', [SupplierController::class, 'index'])->name('supplier');
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
